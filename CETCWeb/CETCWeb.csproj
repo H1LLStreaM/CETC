@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6E1937DB-62DC-41D4-A3DB-5C844F0ED5F3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CETCWeb</RootNamespace>
+    <AssemblyName>CETCWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <ApplicationInsightsResourceId />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="500.html" />
+    <Content Include="agile_board.html" />
+    <Content Include="article.html" />
+    <Content Include="badges_labels.html" />
+    <Content Include="basic_gallery.html" />
+    <Content Include="blog.html" />
+    <Content Include="blueimp.html" />
+    <Content Include="buttons.html" />
+    <Content Include="calendar.html" />
+    <Content Include="carousel.html" />
+    <Content Include="chat_view.html" />
+    <Content Include="clients.html" />
+    <Content Include="code_editor.html" />
+    <Content Include="ConsulForm4MDT.aspx" />
+    <Content Include="contacts.html" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\demo\webuploader-demo.min.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\login.min.css" />
+    <Content Include="css\patterns\header-profile-skin-1.png" />
+    <Content Include="css\patterns\header-profile-skin-3.png" />
+    <Content Include="css\patterns\header-profile.png" />
+    <Content Include="css\patterns\shattered.png" />
+    <Content Include="css\style.min.css" />
+    <Content Include="css_animation.html" />
+    <Content Include="diff.html" />
+    <Content Include="draggable_panels.html" />
+    <Content Include="empty_page.html" />
+    <Content Include="faq.html" />
+    <Content Include="favicon.ico" />
+    <Content Include="file_manager.html" />
+    <Content Include="font-awesome\css\font-awesome.css" />
+    <Content Include="fontawesome.html" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="form_advanced.html" />
+    <Content Include="form_avatar.html" />
+    <Content Include="form_basic.html" />
+    <Content Include="form_builder.html" />
+    <Content Include="form_editors.html" />
+    <Content Include="form_file_upload.html" />
+    <Content Include="form_markdown.html" />
+    <Content Include="form_simditor.html" />
+    <Content Include="form_validate.html" />
+    <Content Include="form_webuploader.html" />
+    <Content Include="form_wizard.html" />
+    <Content Include="forum_main.html" />
+    <Content Include="glyphicons.html" />
+    <Content Include="graph_echarts.html" />
+    <Content Include="graph_flot.html" />
+    <Content Include="graph_metrics.html" />
+    <Content Include="graph_morris.html" />
+    <Content Include="graph_peity.html" />
+    <Content Include="graph_rickshaw.html" />
+    <Content Include="graph_sparkline.html" />
+    <Content Include="grid_options.html" />
+    <Content Include="iconfont.html" />
+    <Content Include="img\a1.jpg" />
+    <Content Include="img\a2.jpg" />
+    <Content Include="img\a3.jpg" />
+    <Content Include="img\a4.jpg" />
+    <Content Include="img\a5.jpg" />
+    <Content Include="img\a6.jpg" />
+    <Content Include="img\a7.jpg" />
+    <Content Include="img\a8.jpg" />
+    <Content Include="img\a9.jpg" />
+    <Content Include="img\bg.png" />
+    <Content Include="img\iconfont-logo.png" />
+    <Content Include="img\icons.png" />
+    <Content Include="img\index.jpg" />
+    <Content Include="img\index_4.jpg" />
+    <Content Include="img\loading-upload.gif" />
+    <Content Include="img\locked.png" />
+    <Content Include="img\login-background.jpg" />
+    <Content Include="img\p1.jpg" />
+    <Content Include="img\p2.jpg" />
+    <Content Include="img\p3.jpg" />
+    <Content Include="img\pay.png" />
+    <Content Include="img\profile.jpg" />
+    <Content Include="img\profile_big.jpg" />
+    <Content Include="img\profile_small.jpg" />
+    <Content Include="img\progress.png" />
+    <Content Include="img\p_big1.jpg" />
+    <Content Include="img\p_big2.jpg" />
+    <Content Include="img\p_big3.jpg" />
+    <Content Include="img\qr_code.png" />
+    <Content Include="img\success.png" />
+    <Content Include="img\user.png" />
+    <Content Include="img\wenku_logo.png" />
+    <Content Include="index.html" />
+    <Content Include="index_v1.html" />
+    <Content Include="index_v2.html" />
+    <Content Include="index_v3.html" />
+    <Content Include="index_v4.html" />
+    <Content Include="index_v5.html" />
+    <Content Include="invoice.html" />
+    <Content Include="invoice_print.html" />
+    <Content Include="jstree.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\contabs.min.js" />
+    <Content Include="js\content.min.js" />
+    <Content Include="js\hplus.min.js" />
+    <Content Include="js\jquery-ui-1.10.4.min.js" />
+    <Content Include="js\jquery-ui.custom.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\welcome.min.js" />
+    <Content Include="layer.html" />
+    <Content Include="layerdate.html" />
+    <Content Include="layouts.html" />
+    <Content Include="lockscreen.html" />
+    <Content Include="login.html" />
+    <Content Include="login_v2.html" />
+    <Content Include="mailbox.html" />
+    <Content Include="mail_compose.html" />
+    <Content Include="mail_detail.html" />
+    <Content Include="modal_window.html" />
+    <Content Include="nestable_list.html" />
+    <Content Include="notifications.html" />
+    <Content Include="pin_board.html" />
+    <Content Include="plyr.html" />
+    <Content Include="profile.html" />
+    <Content Include="projects.html" />
+    <Content Include="project_detail.html" />
+    <Content Include="register.html" />
+    <Content Include="search_results.html" />
+    <Content Include="social_feed.html" />
+    <Content Include="spinners.html" />
+    <Content Include="suggest.html" />
+    <Content Include="sweetalert.html" />
+    <Content Include="table_basic.html" />
+    <Content Include="table_bootstrap.html" />
+    <Content Include="table_data_tables.html" />
+    <Content Include="table_foo_table.html" />
+    <Content Include="table_jqgrid.html" />
+    <Content Include="tabs_panels.html" />
+    <Content Include="teams_board.html" />
+    <Content Include="timeline.html" />
+    <Content Include="timeline_v2.html" />
+    <Content Include="toastr_notifications.html" />
+    <Content Include="tree_view.html" />
+    <Content Include="typography.html" />
+    <Content Include="Web.config" />
+    <Content Include="webDoclistSearch.aspx" />
+    <Content Include="webim.html" />
+    <Content Include="widgets.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsulForm4MDT.aspx.cs">
+      <DependentUpon>ConsulForm4MDT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsulForm4MDT.aspx.designer.cs">
+      <DependentUpon>ConsulForm4MDT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="webDoclistSearch.aspx.cs">
+      <DependentUpon>webDoclistSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webDoclistSearch.aspx.designer.cs">
+      <DependentUpon>webDoclistSearch.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap.min.css_v=3.3.6" />
+    <Content Include="css\font-awesome.min.css_v=4.4.0" />
+    <Content Include="css\style.min.css_v=4.1.0" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.eot_v=4.3.0" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.svg_v=4.3.0" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.ttf_v=4.3.0" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff2_v=4.3.0" />
+    <Content Include="font-awesome\fonts\fontawesome-webfont.woff_v=4.3.0" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg#glyphicons_halflingsregular" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="js\bootstrap.min.js_v=3.3.6" />
+    <Content Include="js\content.min.js_v=1.0.0" />
+    <Content Include="js\hplus.min.js_v=4.1.0" />
+    <Content Include="index.html_v=4.1" />
+    <Content Include="index_v1.html_v=4.0" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\plugins\" />
+    <Folder Include="js\demo\" />
+    <Folder Include="plugins\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64779</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64779/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

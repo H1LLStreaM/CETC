@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace CETCWeb
 {
-    public partial class webDoclistSearch : System.Web.UI.Page
+    public partial class winDeptList : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

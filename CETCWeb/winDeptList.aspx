@@ -4,13 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <link rel="shortcut icon" href="favicon.ico"/> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet"/>
-    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet"/>
-    <link href="css/plugins/jsTree/style.min.css" rel="stylesheet"/>
-    <link href="css/animate.min.css" rel="stylesheet"/>
-    <link href="css/style.min.css?v=4.1.0" rel="stylesheet"/>
-    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet" />
+    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet" />
+    <link href="css/plugins/jsTree/style.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/style.min.css?v=4.1.0" rel="stylesheet" />
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
     <title></title>
 </head>
 <body class="gray-bg">
@@ -20,7 +21,8 @@
             <div class="col-sm-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-content">
-                    </div>
+                        <input id="test3" type="text" />
+                        <input id="btn3" type="button" value="button" /></div>
                 </div>
             </div>
         </div>
@@ -28,7 +30,7 @@
             <div class="col-sm-6">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                      
+
                         <div class="ibox-tools">
                             <a class="collapse-link">
                                 <i class="fa fa-chevron-up"></i>
@@ -39,7 +41,7 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <div id="using_json">                            
+                        <div id="using_json">
                         </div>
                     </div>
                 </div>
@@ -76,10 +78,30 @@
     <script src="js/demo/bootstrap-table-demo.min.js"></script>
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
     <style>
-        .jstree-open>.jstree-anchor>.fa-folder:before{content:"\f07c"}.jstree-default .jstree-icon.none{width:0}
+        .jstree-open > .jstree-anchor > .fa-folder:before {
+            content: "\f07c";
+        }
+
+        .jstree-default .jstree-icon.none {
+            width: 0;
+        }
     </style>
     <script>
-        $(document).ready(function(){$("#jstree1").jstree({"core":{"check_callback":true},"plugins":["types","dnd"],"types":{"default":{"icon":"fa fa-folder"},"html":{"icon":"fa fa-file-code-o"},"svg":{"icon":"fa fa-file-picture-o"},"css":{"icon":"fa fa-file-code-o"},"img":{"icon":"fa fa-file-image-o"},"js":{"icon":"fa fa-file-text-o"}}});$("#using_json").jstree({"core":{"data":["Empty Folder",{"text":"Resources","state":{"opened":true},"children":[{"text":"css","children":[{"text":"animate.css","icon":"none"},{"text":"bootstrap.css","icon":"none"},{"text":"main.css","icon":"none"},{"text":"style.css","icon":"none"}],"state":{"opened":true}},{"text":"js","children":[{"text":"bootstrap.js","icon":"none"},{"text":"hplus.min.js","icon":"none"},{"text":"jquery.min.js","icon":"none"},{"text":"jsTree.min.js","icon":"none"},{"text":"custom.min.js","icon":"none"}],"state":{"opened":true}},{"text":"html","children":[{"text":"layout.html","icon":"none"},{"text":"navigation.html","icon":"none"},{"text":"navbar.html","icon":"none"},{"text":"footer.html","icon":"none"},{"text":"sidebar.html","icon":"none"}],"state":{"opened":true}}]},"Fonts","Images","Scripts","Templates",]}})});
+        $(document).ready(function () {
+            var json = <%=getJson()%>;
+            var options = { "core": {} };
+            options.core.data = json;
+            console.log(JSON.stringify(options));
+            $(document).ready(function () {$("#using_json").jstree(options) });
+        });
+        //$(document).ready(function () {
+        //    $("#using_json").jstree({
+        //        "core": {
+        //            "data": [{ "text": "发热门诊", "state": { "opened": true } }, { "text": "急症科", "state": { "opened": true }, "children": [{ "text": "急诊病房", "children": [{ "text": "急诊病房1", "icon": "none" }, { "text": "急诊病房2", "icon": "none" }, { "text": "急诊病房3", "icon": "none" }, { "text": "急诊病房4", "icon": "none" }], "state": { "opened": true } }, { "text": "血液科", "children": [{ "text": "bootstrap.js", "icon": "none" }, { "text": "hplus.min.js", "icon": "none" }, { "text": "jquery.min.js", "icon": "none" }, { "text": "jsTree.min.js", "icon": "none" }, { "text": "custom.min.js", "icon": "none" }], "state": { "opened": true } }, { "text": "html", "children": [{ "text": "layout.html", "icon": "none" }, { "text": "navigation.html", "icon": "none" }, { "text": "navbar.html", "icon": "none" }, { "text": "footer.html", "icon": "none" }, { "text": "sidebar.html", "icon": "none" }], "state": { "opened": true } }] }, "Fonts", "Images", "Scripts", "Templates", ]
+
+        //        }
+        //    })
+        //});
     </script>
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>
 </body>
